@@ -1,0 +1,83 @@
+#headeralappuzha{
+    text-align: center;
+    background:lightslategrey;
+    margin: -15px;
+    height: 50px;
+    padding: 50px;
+    letter-spacing: 50px;
+}
+.alappuzhaintro{
+    margin:-15px;
+    padding:50px;
+    background-color: rgba(0,0,0,0.2);
+    color:brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+#alappuzhaheading1{
+    text-align: center;
+    color:darkslateblue;
+    letter-spacing: 10px;
+}
+.box{
+    color:black;
+    border:2px solid black;
+    width:30%;
+    padding: 10px;
+    margin: 35px;
+    margin-right: 8px;
+    margin-left: 16px;
+    margin-top: 50px;
+    float: left;
+    border-radius: 10px;
+    background:-webkit-linear-gradient(rgb(214, 227, 228),whitesmoke);
+    height: 650px;
+}
+.box h4{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+ #id2{
+   width:300px;
+   padding: 20px;
+ }
+ #id3{
+     width:300px;
+     padding: 20px;
+ }
+ #id4{
+     width:300px;
+     padding:20px;
+ }
+ #id5{
+     width:350px;
+     padding:20px;
+ }
+ #id6{
+     width:350px;
+     padding:20px;
+ }
+ #id8{
+     width:350px;
+     padding:20px;
+ }
+ #id9{
+    width:350px;
+    padding:20px;
+ }
+ #id10{
+     width:350px;
+     padding:20px;
+ }
+ #id11{
+     width:350px;
+     padding:20px;
+ }
+ .box p{
+     padding:20px;
+     word-spacing: 5px;
+ }
+ .container{
+    margin-top: 30px;
+ }

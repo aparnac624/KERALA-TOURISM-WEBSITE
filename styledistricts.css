@@ -1,0 +1,127 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.tourismtitle{
+    float: left;
+     width:200px;
+    height:90px;
+    margin:-5px;
+    padding: 10px;
+}
+
+header{
+    text-align: center;
+    background-color:midnightblue;
+    height:100px;
+    color:whitesmoke;
+}
+header p{
+    padding:40px;
+    letter-spacing: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.container3{
+    /* border:2px solid black; */
+    margin:20px;
+    /* margin-right: 450px; */
+    padding:20px;
+    height: 1500px;
+}
+.container3 a{
+    text-align: center;
+    text-decoration: none;
+    /* border:2px solid black; */
+    /* margin:25px; */
+    background-color: royalblue;
+    color: whitesmoke;
+}
+.container3 p{
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container3 img{
+    padding:20px;
+}
+.marquee a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:whitesmoke;
+}
+.marquee{
+    background-color:midnightblue;
+    margin-top:-40px;
+    height:50px;
+}
+
+
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+  float: right;
+  margin-right: 60px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+.overlay a{
+    text-decoration: none;
+}
+
+
+.aside{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:15px;
+    float: left;
+    margin-top: 150px;
+    padding:50px;
+}
+.aside li{
+    list-style-type: none;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:
+}
+footer{
+    /* background-color: black; */
+    color:whitesmoke;
+    margin-top: 20%;
+    text-align: center;
+    font-size: medium;
+    margin-top:-80px;
+    height: 100px;
+    background-color:midnightblue;
+}

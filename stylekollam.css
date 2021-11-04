@@ -1,0 +1,104 @@
+header {
+    position:absolute;
+}
+
+body{
+    background-color:black;
+}
+
+.placestovisitinkollam{
+    background-color:black;
+    text-align: center;
+}
+
+header h1{
+    text-align: center;
+    color:turquoise;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200px;
+    letter-spacing: 100px;
+    font-size: 80px;
+    margin-top: 20px;
+    padding:25px;
+    margin-left: 300px;
+}
+
+.kollamintro{
+    color:whitesmoke;
+    word-spacing: 4px;
+    text-align:justify;
+    /* border: 2px solid grey; */
+    background-color: rgb(8, 0, 0);
+    background: -webkit-linear-gradient(black,grey);
+    margin-top: -10px;
+    padding: 50px;
+    width:1504px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#heading1{
+    color:white;
+    margin-left:35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: darkslategray;
+    
+}
+
+/* PLACES TO VISIT CONTAINER */
+
+
+.box{
+    color:white;
+    border:2px solid black;
+    width:30%;
+    padding: 10px;
+    margin: 35px;
+    margin-right: 8px;
+    margin-left: 16px;
+    float: left;
+    border-radius: 5px;
+    background:-webkit-linear-gradient(black,grey);
+    height: 600px;
+}
+.box h3{
+    text-align: center;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+#id1{
+    width:350px;
+    padding:2px ;
+}
+#id2{
+    width:350px;
+    padding:2px;
+}
+#id3{
+    width:320px;
+    padding: 2px;
+}
+#id4{
+    width:420px;
+    padding: 2px;
+}
+#id5{
+    width:420px;
+    padding: 2px;
+}
+#id6{
+    width: 420px;
+    padding: 2px;
+}
+#id7{
+    width:400px;
+    padding: 2px;
+}
+#id8{
+    width:420px;
+    padding: 2px;
+}
+#id9{
+    width: 420px;
+    padding: 2px;
+}
