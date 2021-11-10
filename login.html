@@ -9,21 +9,21 @@
         <img src="./Images/image9.jpg" alt=""/>
     </header>
     <!-- LOGIN FORM -->
-    <form action="#" class="loginclass">
+    <form action="loginpage.html" class="loginclass" onsubmit="return validate()">
         <h1> <b> USER LOGIN </b> </h1>
         <br>
         <div class="logincontents">
             <h4><label for="username"> Email</label></h4>
-            <input type="text" placeholder="Enter your username">
+            <input type="text" placeholder="Enter your username" id="email">
         </div>
         <br>
             <div class="logincontents">
             <h4><label for="password"> Password </label></h4>
-            <input type="password" placeholder="Enter your password">
+            <input type="password" placeholder="Enter your password" id="pwd">
         </div>
         <br>
         <div>
-            <b><button id="loginbutton"> LOG IN </button></b>
+            <b><button id="submit"> LOG IN </button></b>
         </div>
         <br>
         <div class="loginmisce">
@@ -34,7 +34,7 @@
 
     </form>
     <!-- END OF FORM -->
-    </form>
+    <script src="form.js"></script>
     
 </body>
 </html>
