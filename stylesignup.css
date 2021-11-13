@@ -12,7 +12,7 @@ body{
     /* border:2px solid black; */
     padding: 100px;
     background-color: rgba(193, 226, 226, 0.829);
-    height: 400px;
+    height: 800px;
 }
 .signupclass h1{
     text-align: center;
@@ -23,6 +23,7 @@ body{
 }
 .signupcontents h4{
     color:black;
+    visibility: visible;
 }
 .signupcontents input{
     padding: 5px;
@@ -48,3 +49,26 @@ body{
     text-align: center;
 }
 
+
+
+.signupcontents label{
+    /* visibility: hidden; */
+}
+
+.passwordcheck{
+    display:flex;
+    font-size:15px;
+    color:grey;
+}
+
+#message{
+    display:none;
+    font-size: 15px;
+    position:absolute;
+
+}
+
+#error4{
+    color:red;
+    /* visibility: hidden; */
+}

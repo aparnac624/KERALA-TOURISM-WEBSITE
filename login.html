@@ -4,26 +4,46 @@
     <title> LOG IN </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body >
-    <header>
+<body>
+    <!-- <header>
         <img src="./Images/image9.jpg" alt=""/>
-    </header>
+    </header> -->
     <!-- LOGIN FORM -->
-    <form action="loginpage.html" class="loginclass" onsubmit="return validate()">
+    <form action="loginpage.html" class="loginclass" onsubmit="return validation();">
         <h1> <b> USER LOGIN </b> </h1>
         <br>
+        <br>
+        <br>
         <div class="logincontents">
-            <h4><label for="username"> Email</label></h4>
-            <input type="text" placeholder="Enter your username" id="email">
+            <!-- <h4><label for="username"> Email</label></h4> -->
+            <br>
+            <i class="fa fa-user fa-2x" aria-hidden="true"></i> &nbsp;
+            <input type="text" placeholder="  Enter your username"  id="email" required>
+            <hr>
+            <label for="error" id="error1" ></label>
         </div>
         <br>
             <div class="logincontents">
-            <h4><label for="password"> Password </label></h4>
-            <input type="password" placeholder="Enter your password" id="pwd">
-        </div>
+            <!-- <h4><label for="password"> Password </label></h4> -->
+            <br>
+            <i class="fa fa-lock fa-2x" aria-hidden="true"></i> &nbsp;
+            <input type="password" placeholder="  Enter your password" autocomplete="off" id="pwd"   onkeyup="passCheck(this.value);passWordstrength(this.value)" required>
+            <hr>
+            <!-- <label for="error" id="error2"></label> -->
+            </div>
+            <p id="message"> Password is <span id="strength"></span></p>
+        <!-- <br> -->
         <br>
+        <br>
+        <p>
+            <label for="passwordvalidate" class="passwordcheck"> minimum 8 characters </label>
+            <label for="passwordvalidate" class="passwordcheck"> atleast one lowercase character </label>
+            <label for="passwordvalidate" class="passwordcheck"> atleast one uppercase character </label>
+            <label for="passwordvalidate" class="passwordcheck"> atleast one number </label>
+         </p>
+         <br>
         <div>
-            <b><button id="submit"> LOG IN </button></b>
+            <b><button id="submit" style="font-weight: 1000px;" onclick="return validation(); return passCheck()"> LOG IN </button></b>
         </div>
         <br>
         <div class="loginmisce">

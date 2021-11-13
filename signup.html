@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> SIGN UP </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesignup.css">
+    <title>SIGN UP PAGE</title>
 </head>
 <body>
-    <form action="#" class="signupclass">
+    <form action="signuppage.html" class="signupclass" onsubmit="return validate()">
         <h1> <b> SIGN UP </b> </h1>
         <br>
-        <br>
+        <!-- <br> -->
         <h3> Please fill in this form to create an account </h3>
         <hr>
         <br>
         <div class="signupcontents">
-            <h4><label for="username"> Email</label></h4>
-            <input type="text" placeholder="Enter your email">
+            <h4><label for="username"> Email </label></h4>
+            <input type="text" placeholder="Enter your email" id="email" onkeyup="emailvalidate(this.value)" required>
+            <br>
+            <label for="error" id="error1"></label>
+        </div>
+        <br>
+        <div class="signupcontents">
+            <h4><label for="phonenumber"> Phone Number </label></h4>
+            <input type="text" placeholder="Enter your phone number" id="phone"  onkeyup="phonenovalidate(this.value)" required>
+            <p id="error2"></p>
         </div>
         <br>
         <div class="signupcontents">
             <h4><label for="password"> Password </label></h4>
-            <input type="password" placeholder="Enter your password">
+            <input type="password" placeholder="Enter your password" id="password" onkeyup="passwordvalidate(this.value); passwordstrength(this.value)"  required>
+            <label for="error" id="error3"></label>
         </div>
+        <p id="message"> Password is <span id="strength"></span></p>
         <br>
         <div class="signupcontents">
-            <h4><label for="password"> Repeat Password </label></h4>
-            <input type="password" placeholder="Repeat password">
+            <h4><label for="password"> Confirm Password </label></h4>
+            <input type="password" placeholder="Repeat password" id="pwd" onkeyup="confirmpasswordvalidate(this.value)" required>
+            <br>
+            <p id="error4"></p>
         </div>
+        <br>
+        <p>
+            <label for="passwordvalidate" class="passwordcheck"> minimum 8 characters </label>
+            <br>
+            <label for="passwordvalidate" class="passwordcheck"> atleast one lowercase character </label>
+            <br>
+            <label for="passwordvalidate" class="passwordcheck"> atleast one uppercase character </label>
+            <br>
+            <label for="passwordvalidate" class="passwordcheck"> atleast one number </label>
+         </p>
+         <br>
         <br>
         <label>
             <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -34,9 +60,12 @@
         <br>
         <div class="clearfix">
             <button type="button" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign Up</button>
+            <button type="submit" class="signupbtn" onclick="">Sign Up</button>
           </div>
         </div>
     </form>
+    <script src="signupform.js"></script>
+
+    
 </body>
 </html>

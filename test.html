@@ -23,3 +23,23 @@
     margin-left:10px;
 
 } -->
+
+
+
+
+if(eightChar.test(data) && lowercase.test(data) && uppercase.test(data) && number.test(data)){
+    password[0].style.color = "springgreen";
+    password[1].style.color = "springgreen";
+    password[2].style.color = "springgreen";
+    password[3].style.color = "springgreen";
+    return true;
+ }
+ else{
+     password[0].style.color = "grey";
+     password[1].style.color = "grey";
+     password[2].style.color = "grey";
+     password[3].style.color = "grey";
+     return false;
+ }
+
+ 
