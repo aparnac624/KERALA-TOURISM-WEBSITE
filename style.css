@@ -234,7 +234,7 @@ footer{
 
  /* LOGIN page starts*/
  body{
-     background-image: url('./Images/bg9.jpg');
+     /* background-image: url('./Images/bg9.jpg'); */
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-size: cover;
