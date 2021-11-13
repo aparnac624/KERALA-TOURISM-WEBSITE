@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> LOG IN </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title> LOGIN FORM </title>
 </head>
 <body background="./Images/bg9.jpg">
-    <!-- <header>
-        <img src="./Images/image9.jpg" alt=""/>
-    </header> -->
-    <!-- LOGIN FORM -->
-    <form action="loginpage.html" class="loginclass" onsubmit="return validation();">
+    <form action="loginpage.html" class="loginclass" onsubmit="return validate()">
         <h1> <b> USER LOGIN </b> </h1>
         <br>
         <br>
@@ -18,7 +17,7 @@
             <!-- <h4><label for="username"> Email</label></h4> -->
             <br>
             <i class="fa fa-user fa-2x" aria-hidden="true"></i> &nbsp;
-            <input type="text" placeholder="  Enter your username"  id="email" required>
+            <input type="text" placeholder="  Enter your username" onkeyup="emailvalidate(this.value)" id="email" required>
             <hr>
             <label for="error" id="error1" ></label>
         </div>
@@ -27,7 +26,7 @@
             <!-- <h4><label for="password"> Password </label></h4> -->
             <br>
             <i class="fa fa-lock fa-2x" aria-hidden="true"></i> &nbsp;
-            <input type="password" placeholder="  Enter your password" autocomplete="off" id="pwd"   onkeyup="passCheck(this.value);passWordstrength(this.value)" required>
+            <input type="password" placeholder="  Enter your password"  id="pwd"   onkeyup="passwordvalidate(this.value); passwordstrength(this.value)" required>
             <hr>
             <!-- <label for="error" id="error2"></label> -->
             </div>
@@ -43,7 +42,7 @@
          </p>
          <br>
         <div>
-            <b><button id="submit" style="font-weight: 1000px;" onclick="return validation(); return passCheck()"> LOG IN </button></b>
+            <b><button id="submit" style="font-weight: 1000px;" onclick=""> LOG IN </button></b>
         </div>
         <br>
         <div class="loginmisce">
@@ -55,6 +54,7 @@
     </form>
     <!-- END OF FORM -->
     <script src="form.js"></script>
+
     
 </body>
 </html>
