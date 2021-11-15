@@ -152,10 +152,12 @@ function phonenovalidate(phonenoinput){
     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     if(phonenoinput.match(phoneno)){
         document.getElementById("error2").innerText = "Valid phone number";
+        error2.style.color = "green";
         flag=1;
     }
     else{
         document.getElementById("error2").innerText = "Not a valid phone number";
+        error2.style.color = 'red';
         flag=0;
     }
 
