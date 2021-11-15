@@ -24,10 +24,12 @@ function emailvalidate(emailinput){
 
 // email validation end
 
-// password validation start
+// validation of password and password strength start
 
 function passwordvalidate(passwordinput){
     var rules = document.getElementsByClassName("passwordcheck");
+    var msg = document.getElementById("message");
+    var str = document.getElementById("strength");
     const eightChar = new RegExp('(?=.{8,})');
     const lowercase = new RegExp('(?=.*[a-z])');
     const uppercase = new RegExp('(?=.*[A-Z])');
@@ -77,28 +79,19 @@ function passwordvalidate(passwordinput){
         flag=0;
         
     }
-}
-
-// password validation end
-
-// validation of password strength start
-function passwordstrength(passwordinput2){
-    var msg = document.getElementById("message");
-    var str = document.getElementById("strength");
-
-    if(passwordinput2.length > 0){
+    if(passwordinput.length > 0){
         msg.style.display = "block";
-        if(passwordinput2.length < 4){
+        if(passwordinput.length < 4){
             str.innerHTML = "weak";
             msg.style.color = "red";
             flag=0;
         }
-        else if(passwordinput2.length >=4 && passwordinput2.length <8){
+        else if(passwordinput.length >=4 && passwordinput.length <8){
             str.innerHTML = "medium";
             msg.style.color = "orange";
             flag=0;
         }
-        else if(passwordinput2.length >=8){
+        else if(passwordinput.length >=8 && eightChar.test(passwordinput)==true && lowercase.test(passwordinput)==true && uppercase.test(passwordinput)==true && number.test(passwordinput)==true){
             str.innerHTML = "strong";
             msg.style.color = "springgreen";
             flag=1;
@@ -108,6 +101,36 @@ function passwordstrength(passwordinput2){
         msg.style.display = "none";
     }
 }
+
+// validation of password and password strength end
+
+// validation of password strength start
+// function passwordstrength(passwordinput2){
+//     var msg = document.getElementById("message");
+//     var str = document.getElementById("strength");
+
+//     if(passwordinput2.length > 0){
+//         msg.style.display = "block";
+//         if(passwordinput2.length < 4){
+//             str.innerHTML = "weak";
+//             msg.style.color = "red";
+//             flag=0;
+//         }
+//         else if(passwordinput2.length >=4 && passwordinput2.length <8){
+//             str.innerHTML = "medium";
+//             msg.style.color = "orange";
+//             flag=0;
+//         }
+//         else if(passwordinput2.length >=8){
+//             str.innerHTML = "strong";
+//             msg.style.color = "springgreen";
+//             flag=1;
+//         }
+//     }
+//     else{
+//         msg.style.display = "none";
+//     }
+// }
 // validation of password strength end
 
 
